@@ -1,0 +1,126 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: linen;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header - Mobile First */
+header {
+    background-color: palevioletred;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo h1 {
+    color: white;
+    font-size: 28px;
+}
+
+/* Navigation - Mobile First */
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main */
+main {
+    padding: 20px;
+}
+
+/* Bio Hero */
+.bio-hero {
+    background-color: seashell;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    flex-basis: 100%;
+}
+
+.bio-hero h2 {
+    color: palevioletred;
+    margin-bottom: 10px;
+}
+
+/* Card Grid - Mobile First */
+.card-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Cards */
+.card {
+    background-color: mistyrose;
+    border: 2px solid rosybrown;
+    border-radius: 10px;
+    padding: 20px;
+    flex-basis: 100%;
+    transition: 0.3s ease;
+}
+
+.card h3 {
+    color: palevioletred;
+    margin-bottom: 10px;
+}
+
+/* Hover Effect */
+.card:hover {
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px);
+}
+
+/* Footer */
+footer {
+    background-color: palevioletred;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Desktop Layout */
+@media (min-width: 768px) {
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav {
+        flex-direction: row;
+        gap: 25px;
+    }
+
+    .card-grid {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card {
+        flex-basis: 30%;
+    }
+}
