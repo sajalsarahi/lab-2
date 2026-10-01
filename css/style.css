@@ -1,34 +1,27 @@
-/* CSS Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-/* General Styling */
+
+/* whole page */
 body {
     font-family: Arial, sans-serif;
-    background-color: linen;
+    background-color: #f7f3ef;
     color: #333;
     line-height: 1.6;
 }
 
-/* Header - Mobile First */
+
+
+/* header */
 header {
-    background-color: palevioletred;
-    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    padding: 20px;
+    background-color: #d8a7b1;
 }
 
-.logo h1 {
-    color: white;
-    font-size: 28px;
-}
 
-/* Navigation - Mobile First */
+/* nav links */
 nav {
     display: flex;
     flex-direction: column;
@@ -36,73 +29,59 @@ nav {
     text-align: center;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
 
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* Main */
-main {
-    padding: 20px;
-}
-
-/* Bio Hero */
+/* intro section */
 .bio-hero {
-    background-color: seashell;
-    padding: 30px;
+    flex-basis: 100%;
+    background-color: #fff8f2;
+    padding: 25px;
     margin-bottom: 25px;
     border-radius: 10px;
-    flex-basis: 100%;
+    text-align: center;
 }
 
-.bio-hero h2 {
-    color: palevioletred;
-    margin-bottom: 10px;
-}
 
-/* Card Grid - Mobile First */
+
+/* 3 cards section */
 .card-grid {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-/* Cards */
+
+
+/* each card */
 .card {
-    background-color: mistyrose;
-    border: 2px solid rosybrown;
-    border-radius: 10px;
-    padding: 20px;
     flex-basis: 100%;
+    background-color: #f4d8dc;
+    padding: 20px;
+    border: 2px solid #c98f9e;
+    border-radius: 10px;
     transition: 0.3s ease;
 }
 
-.card h3 {
-    color: palevioletred;
-    margin-bottom: 10px;
-}
 
-/* Hover Effect */
+/* hover */
 .card:hover {
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     transform: translateY(-4px);
 }
 
-/* Footer */
+
+
+/* footer */
 footer {
-    background-color: palevioletred;
+    background-color: #d8a7b1;
     color: white;
     text-align: center;
     padding: 20px;
     margin-top: 30px;
 }
 
-/* Desktop Layout */
+
+
+/* desktop */
 @media (min-width: 768px) {
 
     header {
@@ -112,7 +91,6 @@ footer {
 
     nav {
         flex-direction: row;
-        gap: 25px;
     }
 
     .card-grid {
